@@ -40,7 +40,7 @@ jobs:
       - name: Launch Web Service
         run: docker-compose up -d
 
-      -name: Make first contact with our beloved cat-based web page
+      - name: Make first contact with our beloved cat-based web page
         run: /bin/sh wait-for-webserver.sh
 
       - name: Run Selenium Tests
